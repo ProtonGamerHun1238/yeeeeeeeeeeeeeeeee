@@ -1,13 +1,4 @@
-input.onButtonPressed(Button.A, function () {
-    pontok += -1
-})
-input.onButtonPressed(Button.AB, function () {
-    basic.showNumber(pontok)
-})
-input.onButtonPressed(Button.B, function () {
-    pontok += 1
-})
-input.onGesture(Gesture.TiltLeft, function () {
+input.onGesture(Gesture.LogoDown, function () {
     kpo = randint(0, 2)
     if (kpo == 0) {
         basic.showLeds(`
@@ -34,6 +25,15 @@ input.onGesture(Gesture.TiltLeft, function () {
             # # . # #
             `)
     }
+})
+input.onButtonPressed(Button.A, function () {
+    pontok += -1
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showNumber(pontok)
+})
+input.onButtonPressed(Button.B, function () {
+    pontok += 1
 })
 let pontok = 0
 let kpo = 0
