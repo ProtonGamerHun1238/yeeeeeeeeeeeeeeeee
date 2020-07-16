@@ -1,5 +1,3 @@
-let pontok = 0
-let kpo = 0
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(pontok)
 })
@@ -37,6 +35,9 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     pontok += 1
 })
+let kpo = 0
+let pontok = 0
+basic.showString("Hi")
 basic.forever(function () {
 	
 })
