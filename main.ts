@@ -31,6 +31,9 @@ input.onGesture(Gesture.Shake, function () {
             `)
     }
 })
+input.onButtonPressed(Button.AB, function () {
+    control.reset()
+})
 input.onButtonPressed(Button.B, function () {
     pontok += 1
 })
